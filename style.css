@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #24272E;
+  font-family: 'Asap', sans-serif;
+}
+
+.hide {
+  background-color: #24272E;
+  animation: hide 3s linear 1;
+}
+
+@keyframes hide {
+  0% {
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    background-color: transparent;
+  }
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: aliceblue;
+  color: #24272E;
+  font-weight: bold;
+  word-spacing: 6px;
+}
+
+.score-board {
+  position: relative;
+  width: 200px;
+  margin: 30px auto;
+  padding: 15px 20px;
+  border-radius: 4px;
+  text-align: center;
+  border: 3px solid aliceblue;
+  font-size: 42px;
+  color: aliceblue;
+}
+
+.player {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2px 8px;
+  background-color: #C05754;
+  font-size: 16px;
+}
+
+.user {
+  left: 0;
+}
+
+.comp {
+  left: 100%;
+}
+
+.result {
+  text-align: center;
+  color: aliceblue;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.choices {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.choice {
+  display: inline-block;
+  width: 15vw;
+  height: 15vw;
+  margin: 0 10px;
+  font-size: 8vw;
+  border: 3px solid aliceblue;
+  color: #FDC372;
+  border-radius: 50%;
+  line-height: 15vw;
+  transition: .4s linear;
+}
+
+.choice:hover {
+  cursor: pointer;
+  background-color: #24273E;
+}
+
+#f {
+  display: none;
+}
+
+.choices p {
+  color: aliceblue;
+  padding: 30px;
+  font-weight: bold;
+}
+
+.win-border {
+  border: 3px solid limegreen;
+}
+
+.lose-border {
+  border: 3px solid rgb(168, 31, 31)
+}
+
+.draw-border {
+  border: 3px solid darkgoldenrod;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: aliceblue;
+  color: #24272E;
+  font-weight: bold;
+  word-spacing: 2px;
+}
+
+.button {
+  width: 26px;
+  height: 26px;
+  background-color: #24273E;
+  border: 2px solid rgb(196, 14, 14);
+  border-radius: 50%;
+  margin: 0 10px;
+  transition: .5s;
+  color: aliceblue;
+  font-size: 10px;
+  text-transform: uppercase;
+  overflow: hidden;
+  line-height: 22px;
+}
+
+.button:hover {
+  transform: scale(1.5);
+}
+
+.active {
+  background-color: rgb(196, 14, 14);
+  border: 2px solid black;
+}
+
+#f.cheat {
+  display: inline-block;
+}
+
+/* based on https://www.youtube.com/watch?v=jaVNP3nIAv0 */
